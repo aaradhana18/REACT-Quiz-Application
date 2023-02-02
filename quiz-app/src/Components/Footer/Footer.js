@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 
 export default class Footer extends Component {
+
+  clickNext = () =>{
+    alert("Hi");
+  }
+  
   render() {
     return (
       <div class="border-standard footer">
@@ -8,7 +13,7 @@ export default class Footer extends Component {
           <div class="col-md-3 grey-muted fs-5">Question:  <span>1/8</span></div>
           <div class="col-md-3"></div>
           <div class="col-md-3"></div>
-          <div class="col-md-3 footer-button"><button type="button" class="btn btn-info next-button">Next</button></div>
+          <div class="col-md-3 footer-button"><button type="button" class="btn btn-info next-button" onClick={this.clickNext}>Next</button></div>
         </div>
       </div>
     )
